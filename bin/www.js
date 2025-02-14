@@ -5,7 +5,7 @@
  */
 
 
-import {app} from "../app.js";
+import {app} from "../main.js";
 import http from 'http';
 
 const port = 3000;
@@ -17,3 +17,5 @@ var server = http.createServer(app);
  */
 
 server.listen(port);
+
+console.log('server running on port ' + port);
