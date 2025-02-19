@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World! 12');
+  res.send('Hello World mit Port 5060');
 });
 
 export {app}
