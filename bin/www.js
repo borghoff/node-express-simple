@@ -8,7 +8,7 @@
 import {app} from "../main.js";
 import http from 'http';
 
-const port = 8010;
+const port = 53;
 
 var server = http.createServer(app);
 
