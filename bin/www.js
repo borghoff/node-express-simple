@@ -4,11 +4,8 @@
  * Module dependencies.
  */
 
-
-import {app} from "../main.js";
+import {app, port} from "../main.js";
 import http from 'http';
-
-const port = 53;
 
 var server = http.createServer(app);
 
