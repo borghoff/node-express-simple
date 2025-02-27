@@ -4,15 +4,15 @@
  * Module dependencies.
  */
 
-import {app, port} from "../main.js";
+import {app} from "../app.js";
 import http from 'http';
 
-var server = http.createServer(app);
+var port = (process.env.PORT || '8080');
+
+http.createServer(app).listen(port);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
-server.listen(port);
 
 console.log('server running on port ' + port);
