@@ -7,12 +7,10 @@
 import {app} from "../app.js";
 import http from 'http';
 
-var port = (process.env.PORT || '8080');
-
-http.createServer(app).listen(port);
+http.createServer(app).listen(process.env.PORT);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-console.log('server running on port ' + port);
+console.log('server running on port ' + process.env.PORT);
